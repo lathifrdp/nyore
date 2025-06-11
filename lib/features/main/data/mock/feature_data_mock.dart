@@ -14,8 +14,8 @@ const String featureDataJson = '''
   },
   {
     "id": 2,
-    "name": "Speech to Text X OpenAI",
-    "description": "Fitur ini adalah semacam Speech to Text yang ter-integrasi dengan OpenAI",
+    "name": "Speech AI",
+    "description": "Fitur ini adalah semacam Speech to Text dan Text to Speech yang ter-integrasi dengan Gemini AI",
     "isActive": true,
     "pathRoute": "/stt-openai"
   }

@@ -26,7 +26,7 @@ class _AskGeminiPageState extends State<AskGeminiPage> {
         appBar: AppBar(
           backgroundColor: Colors.blue.shade900,
           title: const Text(
-            'Gemini',
+            'Ask Gemini',
             style: TextStyle(color: Colors.white),
           ),
         ),

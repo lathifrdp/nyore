@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:nyore/core/navigation/app_routes.dart';
 import 'package:nyore/core/navigation/routes.dart';
+import 'package:nyore/features/stt_openai/bloc/speech_to_text_bloc.dart';
 
 Future<void> main() async {
   await dotenv.load();
@@ -13,20 +15,23 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: Routes.root,
-      routes: appRoutes,
-      onUnknownRoute: (settings) {
-        return MaterialPageRoute(
-          builder: (context) => Scaffold(
-            appBar: AppBar(),
-            body: const Center(
-              child: Text('Halaman tidak ditemukan'),
+    return BlocProvider(
+      create: (context) => SpeechToTextBloc(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        initialRoute: Routes.root,
+        routes: appRoutes,
+        onUnknownRoute: (settings) {
+          return MaterialPageRoute(
+            builder: (context) => Scaffold(
+              appBar: AppBar(),
+              body: const Center(
+                child: Text('Halaman tidak ditemukan'),
+              ),
             ),
-          ),
-        );
-      },
+          );
+        },
+      ),
     );
   }
 }
