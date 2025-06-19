@@ -103,6 +103,8 @@ class SpeechToTextBloc extends Bloc<SpeechToTextEvent, SpeechToTextState> {
       throw Exception('API key is missing');
     }
 
+    //komen
+
     GenerativeModel model =
         GenerativeModel(model: 'gemini-1.5-flash-latest', apiKey: apiKey);
 
