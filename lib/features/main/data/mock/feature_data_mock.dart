@@ -18,6 +18,13 @@ const String featureDataJson = '''
     "description": "Fitur ini adalah semacam Speech to Text dan Text to Speech yang ter-integrasi dengan Gemini AI",
     "isActive": true,
     "pathRoute": "/stt-openai"
+  },
+  {
+    "id": 3,
+    "name": "Chatbot",
+    "description": "Fitur chatbot yang ter-integrasi dengan Gemini AI",
+    "isActive": true,
+    "pathRoute": "/chatbot-v2"
   }
 ]
 ''';
