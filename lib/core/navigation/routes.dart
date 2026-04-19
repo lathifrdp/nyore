@@ -4,4 +4,5 @@ class Routes {
   static const sttOpenAI = '/stt-openai';
   static const chatbot = '/chatbot';
   static const chatbotV2 = '/chatbot-v2';
+  static const chefAgent = '/chef-agent';
 }

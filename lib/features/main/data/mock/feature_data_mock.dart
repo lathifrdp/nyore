@@ -25,6 +25,13 @@ const String featureDataJson = '''
     "description": "Fitur chatbot yang ter-integrasi dengan Gemini AI",
     "isActive": true,
     "pathRoute": "/chatbot-v2"
+  },
+  {
+    "id": 4,
+    "name": "Juru Masak Agent",
+    "description": "Chatbot khusus untuk membantu dalam memasak",
+    "isActive": true,
+    "pathRoute": "/chef-agent"
   }
 ]
 ''';
