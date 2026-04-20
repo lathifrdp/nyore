@@ -45,6 +45,10 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Kami memerlukan akses kamera untuk mengambil gambar teks.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Kami memerlukan akses galeri untuk memilih gambar teks.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Kami memerlukan akses mikrofon untuk mengenali suara Anda.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>

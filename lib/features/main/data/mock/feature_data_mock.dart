@@ -32,6 +32,13 @@ const String featureDataJson = '''
     "description": "Chatbot khusus untuk membantu dalam memasak",
     "isActive": true,
     "pathRoute": "/chef-agent"
+  },
+  {
+    "id": 5,
+    "name": "Text Recognition",
+    "description": "Fitur ini adalah semacam text recognition yang ter-integrasi dengan ML Kit",
+    "isActive": true,
+    "pathRoute": "/text-recognition"
   }
 ]
 ''';
