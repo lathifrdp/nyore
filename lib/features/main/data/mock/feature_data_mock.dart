@@ -39,6 +39,13 @@ const String featureDataJson = '''
     "description": "Fitur ini adalah semacam text recognition yang ter-integrasi dengan ML Kit",
     "isActive": true,
     "pathRoute": "/text-recognition"
+  },
+  {
+    "id": 6,
+    "name": "Live Text Recognition",
+    "description": "Deteksi teks secara real-time dari stream kamera dengan ML Kit",
+    "isActive": true,
+    "pathRoute": "/live-text-recognition"
   }
 ]
 ''';

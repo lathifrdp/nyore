@@ -6,4 +6,5 @@ class Routes {
   static const chatbotV2 = '/chatbot-v2';
   static const chefAgent = '/chef-agent';
   static const textRecognition = '/text-recognition';
+  static const liveTextRecognition = '/live-text-recognition';
 }
